@@ -133,7 +133,7 @@
     cursor: pointer;
 
     transform: scale(1);
-    transition: transform 250ms linear;
+    transition: transform 250ms linear, background-color 250ms linear;
 
     color: $btn-text;
     background-color: transparent;

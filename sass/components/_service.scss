@@ -63,6 +63,9 @@
     padding: 21px 21px 50px 21px;
     transform: scale(1);
     transition: transform 250ms linear, box-shadow 250ms linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &:not(:last-child) {
       margin-right: 22px;
     }
