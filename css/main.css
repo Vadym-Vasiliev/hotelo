@@ -731,4 +731,25 @@ body {
 .rightblock-list__btn:hover, .rightblock-list__btn:focus {
   transform: scale(1.05);
   background-color: rgba(55, 113, 200, 0.9137254902);
+}
+
+.company {
+  padding-bottom: 100px;
+}
+
+.company-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.company-list__item:not(:last-child) {
+  margin-right: 90px;
+}
+.company-list__link {
+  display: block;
+  transform: scale(1);
+  transition: transform 250ms linear;
+}
+.company-list__link:hover, .company-list__link:focus {
+  transform: scale(1.1);
 }/*# sourceMappingURL=main.css.map */
