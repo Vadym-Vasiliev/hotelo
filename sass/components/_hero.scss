@@ -1,0 +1,157 @@
+.hero {
+  padding-bottom: 120px;
+}
+
+.hero-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.hero-leftblock {
+  max-width: 646px;
+
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 1.33;
+    margin-bottom: 30px;
+
+    color: $black-text;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 476px;
+  }
+}
+
+.hero-rightblock {
+  min-width: 500px;
+  box-shadow: 0px 22px 38px rgba(0, 34, 19, 0.04);
+  border-radius: 20px;
+  padding: 20px 50px;
+}
+
+.form-period {
+  position: relative;
+  margin-right: 24px;
+
+  &__input {
+    width: 218px;
+    height: 56px;
+    border-radius: 8px;
+    border: transparent;
+    padding: 12px 10px 12px 54px;
+
+    background-color: $gray-bgc;
+  }
+
+  &__svg {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+  }
+}
+
+.form-person {
+  position: relative;
+
+  &__input {
+    width: 218px;
+    height: 56px;
+    border-radius: 8px;
+    border: transparent;
+    padding: 12px 10px 12px 54px;
+
+    background-color: $gray-bgc;
+  }
+
+  &__svg {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+  }
+}
+
+.form-map {
+  position: relative;
+
+  &__input {
+    width: 460px;
+    height: 56px;
+    border-radius: 8px;
+    border: transparent;
+    padding: 12px 60px 12px 54px;
+
+    background-color: $gray-bgc;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 8px;
+    padding: 16px;
+    border: transparent;
+    cursor: pointer;
+    width: 56px;
+    height: 56px;
+
+    background-color: $accent;
+  }
+
+  &__svg {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+  }
+}
+
+.underblock-position {
+  position: relative;
+}
+
+.hero-underblock {
+  display: flex;
+  &__text {
+    position: absolute;
+    bottom: 51px;
+    left: 184px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.25;
+
+    color: $white-text;
+  }
+
+  &__img-one {
+    width: 956px;
+  }
+  &__img-two {
+    width: 308px;
+    margin-bottom: 16px;
+  }
+  &__img-three {
+    width: 308px;
+  }
+}
+
+.underblock-wrap {
+  margin-left: 16px;
+}
