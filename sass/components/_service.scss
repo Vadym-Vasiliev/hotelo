@@ -29,30 +29,6 @@
   }
 }
 
-.service-rightblock {
-  width: 109px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-end;
-  &__text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.75;
-
-    color: $accent;
-  }
-
-  &__span {
-    display: block;
-    width: 109px;
-    height: 6px;
-    border: 1px solid $yellow-bgc;
-    border-radius: 280px;
-  }
-}
-
 .service-list {
   display: flex;
   justify-content: center;

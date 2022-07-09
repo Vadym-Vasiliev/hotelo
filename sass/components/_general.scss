@@ -23,3 +23,27 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+
+.view-block {
+  width: 109px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.view-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: $accent;
+}
+
+.view-span {
+  display: block;
+  width: 109px;
+  height: 6px;
+  border: 1px solid #f9d15c;
+  border-radius: 280px;
+}
