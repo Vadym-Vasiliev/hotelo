@@ -1,4 +1,5 @@
 .hotels {
+  padding-bottom: 120px;
   &__title {
     font-weight: 600;
     font-size: 40px;
@@ -30,14 +31,22 @@
 
   &__item {
     min-width: 100px;
-    height: 40px;
 
     &:not(:last-child) {
       margin-right: 40px;
     }
   }
   &__input {
-    display: none;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
   }
 
   &__span {
@@ -49,5 +58,105 @@
     border: 1px solid #e8e8e8;
     border-radius: 8px;
     cursor: pointer;
+    display: block;
+    transform: scale(1);
+    transition: transform 250ms linear, color 250ms linear, background-color 250ms linear;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+      color: $white-text;
+      background-color: $accent;
+    }
+  }
+
+  .hotels-radiobtn__input:checked ~ .hotels-radiobtn__span {
+    color: $accent;
+    background-color: $accent;
+  }
+}
+
+.downblock-list {
+  display: flex;
+
+  &__content {
+    padding: 20px;
+  }
+
+  &__item {
+    border: 1px solid #e8e8e8;
+    border-radius: 16px;
+    transform: scale(1);
+    transition: transform 250ms linear, box-shadow 250ms linear;
+    display: block;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.02);
+      box-shadow: 0px 22px 38px rgb(0 34 19 / 4%);
+    }
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+
+  &__img {
+    width: 411px;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+
+    color: $second-text;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    max-width: 338px;
+
+    color: $main-text;
+  }
+}
+.downblock-list-down {
+  margin-top: 27px;
+  display: flex;
+  justify-content: space-between;
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: $main-text;
+
+    &--span {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 1;
+      color: $accent;
+    }
+  }
+
+  &__btn {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.43;
+    padding: 5px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: transparent;
+    transform: scale(1);
+    transition: transform 250ms linear, background-color 250ms linear;
+
+    color: $white-text;
+    background-color: $accent;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+      background-color: #3771c8d1;
+    }
   }
 }
