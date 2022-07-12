@@ -1,11 +1,13 @@
 .hero {
   padding-bottom: 120px;
+  padding-top: 100px;
 }
 
 .hero-wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .form-wrap {
@@ -32,7 +34,6 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 1.6;
-    margin-bottom: 40px;
     max-width: 476px;
   }
 }
@@ -112,6 +113,11 @@
     height: 56px;
 
     background-color: $accent;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(55, 113, 200, 0.9137254902);
+    }
   }
 
   &__svg {

@@ -14,13 +14,14 @@
 }
 
 .finest-rightblock {
+  max-width: 586px;
   &__title {
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
     line-height: 1.25;
     margin-bottom: 20px;
-    width: 405px;
+    max-width: 405px;
 
     color: $second-text;
   }
@@ -31,7 +32,7 @@
     font-size: 16px;
     line-height: 1.75;
     margin-bottom: 40px;
-    width: 586px;
+    max-width: 586px;
   }
 }
 
