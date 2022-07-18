@@ -490,11 +490,13 @@ body {
   padding: 20px 50px;
 }
 
-.form-period {
+.form-box {
   position: relative;
+}
+.form-box--margin {
   margin-right: 24px;
 }
-.form-period__input {
+.form-box__input {
   width: 218px;
   height: 56px;
   border-radius: 8px;
@@ -502,43 +504,17 @@ body {
   padding: 12px 10px 12px 54px;
   background-color: #fafafa;
 }
-.form-period__svg {
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
-}
-
-.form-person {
-  position: relative;
-}
-.form-person__input {
-  width: 218px;
-  height: 56px;
-  border-radius: 8px;
-  border: transparent;
-  padding: 12px 10px 12px 54px;
-  background-color: #fafafa;
-}
-.form-person__svg {
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
-}
-
-.form-map {
-  position: relative;
-}
-.form-map__input {
+.form-box__input--width {
   width: 460px;
-  height: 56px;
-  border-radius: 8px;
-  border: transparent;
   padding: 12px 60px 12px 54px;
-  background-color: #fafafa;
 }
-.form-map__btn {
+.form-box__svg {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+.form-box__btn {
   position: absolute;
   top: 0;
   right: 0;
@@ -550,14 +526,8 @@ body {
   height: 56px;
   background-color: #3771c8;
 }
-.form-map__btn:hover, .form-map__btn:focus {
+.form-box__btn:hover, .form-box__btn:focus {
   background-color: rgba(55, 113, 200, 0.9137254902);
-}
-.form-map__svg {
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
 }
 
 .underblock-position {

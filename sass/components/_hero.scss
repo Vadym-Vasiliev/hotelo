@@ -45,9 +45,12 @@
   padding: 20px 50px;
 }
 
-.form-period {
+.form-box {
   position: relative;
-  margin-right: 24px;
+
+  &--margin {
+    margin-right: 24px;
+  }
 
   &__input {
     width: 218px;
@@ -57,6 +60,11 @@
     padding: 12px 10px 12px 54px;
 
     background-color: $gray-bgc;
+
+    &--width {
+      width: 460px;
+      padding: 12px 60px 12px 54px;
+    }
   }
 
   &__svg {
@@ -64,41 +72,6 @@
     top: 50%;
     left: 20px;
     transform: translateY(-50%);
-  }
-}
-
-.form-person {
-  position: relative;
-
-  &__input {
-    width: 218px;
-    height: 56px;
-    border-radius: 8px;
-    border: transparent;
-    padding: 12px 10px 12px 54px;
-
-    background-color: $gray-bgc;
-  }
-
-  &__svg {
-    position: absolute;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%);
-  }
-}
-
-.form-map {
-  position: relative;
-
-  &__input {
-    width: 460px;
-    height: 56px;
-    border-radius: 8px;
-    border: transparent;
-    padding: 12px 60px 12px 54px;
-
-    background-color: $gray-bgc;
   }
 
   &__btn {
@@ -118,13 +91,6 @@
     &:focus {
       background-color: rgba(55, 113, 200, 0.9137254902);
     }
-  }
-
-  &__svg {
-    position: absolute;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%);
   }
 }
 
