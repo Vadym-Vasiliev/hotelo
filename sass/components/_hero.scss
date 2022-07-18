@@ -112,15 +112,15 @@
     color: $white-text;
   }
 
-  &__img-one {
-    width: 956px;
-  }
-  &__img-two {
+  &__img {
     width: 308px;
-    margin-bottom: 16px;
-  }
-  &__img-three {
-    width: 308px;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+    &--one {
+      width: 956px;
+    }
   }
 }
 

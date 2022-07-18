@@ -547,15 +547,14 @@ body {
   line-height: 1.25;
   color: #ffffff;
 }
-.hero-underblock__img-one {
-  width: 956px;
-}
-.hero-underblock__img-two {
+.hero-underblock__img {
   width: 308px;
+}
+.hero-underblock__img:not(:last-child) {
   margin-bottom: 16px;
 }
-.hero-underblock__img-three {
-  width: 308px;
+.hero-underblock__img--one {
+  width: 956px;
 }
 
 .underblock-wrap {
