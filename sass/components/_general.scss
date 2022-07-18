@@ -31,20 +31,36 @@ body {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
-}
 
-.view-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.75;
-  color: $accent;
-}
+  &__btn {
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    color: $accent;
+    border: none;
+    cursor: pointer;
 
-.view-span {
-  display: block;
-  width: 109px;
-  height: 6px;
-  border: 1px solid #f9d15c;
-  border-radius: 280px;
+    transform: scale(1);
+    transition: transform 250ms linear;
+
+    background-color: transparent;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 109px;
+      height: 6px;
+      border: 1px solid #f9d15c;
+      border-radius: 280px;
+    }
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+    }
+  }
 }

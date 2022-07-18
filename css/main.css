@@ -314,21 +314,31 @@ body {
   flex-direction: column;
   align-self: flex-end;
 }
-
-.view-text {
+.view-block__btn {
+  position: relative;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.75;
   color: #3771c8;
+  border: none;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 250ms linear;
+  background-color: transparent;
 }
-
-.view-span {
-  display: block;
+.view-block__btn::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
   width: 109px;
   height: 6px;
   border: 1px solid #f9d15c;
   border-radius: 280px;
+}
+.view-block__btn:hover, .view-block__btn:focus {
+  transform: scale(1.05);
 }
 
 .header {
@@ -597,7 +607,7 @@ body {
   justify-content: center;
 }
 .service-list__item {
-  width: 308px;
+  max-width: 308px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
   border-radius: 8px;
   padding: 21px 21px 50px 21px;
