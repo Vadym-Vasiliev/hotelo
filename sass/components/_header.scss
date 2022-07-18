@@ -97,38 +97,25 @@
   display: flex;
   align-items: center;
 
-  &__span {
-    position: relative;
-    width: 18px;
-    height: 2px;
-    border-radius: 2px;
+  &__menu {
     margin-right: 24px;
+    border: none;
+    cursor: pointer;
 
-    background-color: $black-text;
+    transform: scale(1);
+    transition: transform 250ms linear, fill 250ms linear;
 
-    &::before {
-      content: '';
-      position: absolute;
-      width: 18px;
-      height: 2px;
-      border-radius: 2px;
+    background-color: transparent;
 
-      transform: translate(-5px, -5px);
-
-      background-color: $black-text;
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+      fill: $accent;
     }
+  }
 
-    &::after {
-      content: '';
-      position: absolute;
-      width: 18px;
-      height: 2px;
-      border-radius: 2px;
-
-      transform: translate(-5px, 5px);
-
-      background-color: $black-text;
-    }
+  &__svg {
+    fill: $black-text;
   }
 
   &__btn {

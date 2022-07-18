@@ -412,31 +412,20 @@ body {
   display: flex;
   align-items: center;
 }
-.header-rightblock__span {
-  position: relative;
-  width: 18px;
-  height: 2px;
-  border-radius: 2px;
+.header-rightblock__menu {
   margin-right: 24px;
-  background-color: #000000;
+  border: none;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 250ms linear, fill 250ms linear;
+  background-color: transparent;
 }
-.header-rightblock__span::before {
-  content: "";
-  position: absolute;
-  width: 18px;
-  height: 2px;
-  border-radius: 2px;
-  transform: translate(-5px, -5px);
-  background-color: #000000;
+.header-rightblock__menu:hover, .header-rightblock__menu:focus {
+  transform: scale(1.1);
+  fill: #3771c8;
 }
-.header-rightblock__span::after {
-  content: "";
-  position: absolute;
-  width: 18px;
-  height: 2px;
-  border-radius: 2px;
-  transform: translate(-5px, 5px);
-  background-color: #000000;
+.header-rightblock__svg {
+  fill: #000000;
 }
 .header-rightblock__btn {
   font-style: normal;
