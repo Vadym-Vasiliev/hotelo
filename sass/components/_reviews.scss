@@ -8,7 +8,8 @@
 
 .reviews-leftblock {
   &__img {
-    width: 640px;
+    flex-basis: 0;
+    object-fit: cover;
   }
 }
 
@@ -19,7 +20,7 @@
 
 .reviews-rightblock {
   border-radius: 0 12px 12px 0;
-  max-width: 640px;
+  flex: 1;
 
   background-color: $yellow-bgc;
   &__img {

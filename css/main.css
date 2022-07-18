@@ -753,7 +753,8 @@ body {
 }
 
 .reviews-leftblock__img {
-  width: 640px;
+  flex-basis: 0;
+  object-fit: cover;
 }
 
 .rightblock-content {
@@ -763,7 +764,7 @@ body {
 
 .reviews-rightblock {
   border-radius: 0 12px 12px 0;
-  max-width: 640px;
+  flex: 1;
   background-color: #f9d15c;
 }
 .reviews-rightblock__img {
