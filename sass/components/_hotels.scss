@@ -34,6 +34,7 @@
       margin-right: 40px;
     }
   }
+
   &__input {
     position: absolute;
     white-space: nowrap;
@@ -82,7 +83,16 @@
     padding: 20px;
   }
 
+  &__link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
   &__item {
+    position: relative;
     border: 1px solid #e8e8e8;
     border-radius: 16px;
     transform: scale(1);
