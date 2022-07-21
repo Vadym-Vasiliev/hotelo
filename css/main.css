@@ -631,6 +631,12 @@ body.menu-open {
   padding-bottom: 120px;
   padding-top: 100px;
 }
+@media screen and (max-width: 767px) {
+  .hero {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+}
 
 .hero-wrap {
   display: flex;
@@ -638,11 +644,37 @@ body.menu-open {
   justify-content: space-between;
   margin-bottom: 40px;
 }
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  .hero-wrap {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-wrap {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 
 .form-wrap {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+}
+@media screen and (min-width: 1320px) {
+  .form-wrap {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  .form-wrap {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .form-wrap {
+    margin-bottom: 20px;
+  }
 }
 
 .hero-leftblock {
@@ -670,12 +702,23 @@ body.menu-open {
   border-radius: 20px;
   padding: 20px 50px;
 }
+@media screen and (max-width: 767px) {
+  .hero-rightblock {
+    min-width: 400px;
+    padding: 16px;
+  }
+}
 
 .form-box {
   position: relative;
 }
 .form-box--margin {
   margin-right: 24px;
+}
+@media screen and (max-width: 767px) {
+  .form-box--margin {
+    margin-right: 12px;
+  }
 }
 .form-box__input {
   width: 218px;
@@ -688,6 +731,12 @@ body.menu-open {
 .form-box__input--width {
   width: 460px;
   padding: 12px 60px 12px 54px;
+}
+@media screen and (max-width: 767px) {
+  .form-box__input--width {
+    width: 400px;
+    padding: 12px 40px 12px 54px;
+  }
 }
 .form-box__svg {
   position: absolute;
@@ -718,6 +767,19 @@ body.menu-open {
 .hero-underblock {
   display: flex;
 }
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  .hero-underblock {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-underblock {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 .hero-underblock__text {
   position: absolute;
   bottom: 51px;
@@ -731,18 +793,63 @@ body.menu-open {
   padding: 0 30px;
   color: #ffffff;
 }
+@media screen and (max-width: 767px) {
+  .hero-underblock__text {
+    font-size: 28px;
+  }
+}
 .hero-underblock__img {
   width: 308px;
 }
-.hero-underblock__img:not(:last-child) {
-  margin-bottom: 16px;
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  .hero-underblock__img {
+    width: 340px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-underblock__img {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .hero-underblock__img:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
 .hero-underblock__img--one {
   width: 956px;
 }
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  .hero-underblock__img--one {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-underblock__img--one {
+    width: 440px;
+  }
+}
 
-.underblock-wrap {
-  margin-left: 16px;
+@media screen and (min-width: 1320px) {
+  .underblock-wrap {
+    margin-left: 16px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  .underblock-wrap {
+    display: flex;
+    flex: w;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .underblock-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
 
 .service {
