@@ -1,15 +1,34 @@
 .finest {
   padding-bottom: 100px;
+
+  @include mobile {
+    padding-bottom: 60px;
+  }
 }
 
 .finest-content {
   display: flex;
   justify-content: space-between;
+
+  @include tablet {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .finest-leftblock {
   &__img {
     width: 628px;
+
+    @include mobile {
+      width: 440px;
+    }
   }
 }
 
@@ -40,10 +59,27 @@
   display: flex;
   align-items: center;
   margin-bottom: 60px;
+
+  @include mobile {
+    flex-wrap: wrap;
+    margin: -15px;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
   &__item {
+    @include mobile {
+      width: calc((100% - 30px - 30px) / 2);
+      margin: 15px;
+    }
     text-align: center;
     &:not(:last-child) {
-      margin-right: 60px;
+      @include desktop {
+        margin-right: 60px;
+      }
+
+      @include tablet {
+        margin-right: 60px;
+      }
     }
   }
 
