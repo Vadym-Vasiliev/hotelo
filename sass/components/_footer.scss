@@ -1,10 +1,21 @@
 .footer {
   padding-bottom: 63px;
+  padding-top: 63px;
 }
 
 .footer-content {
   display: flex;
-  justify-content: space-around;
+  @include tablet {
+    justify-content: space-around;
+  }
+
+  @include desktop {
+    justify-content: space-around;
+  }
+  @include mobile {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
 
 .footer-leftblock {
@@ -39,6 +50,10 @@
     line-height: 1.5;
     max-width: 264px;
     margin-bottom: 32px;
+
+    @include tablet {
+      max-width: 226px;
+    }
   }
 }
 
@@ -78,6 +93,14 @@
   &__item {
     &:not(:last-child) {
       margin-right: 165px;
+
+      @include tablet {
+        margin-right: 80px;
+      }
+
+      @include mobile {
+        margin-right: 60px;
+      }
     }
   }
 

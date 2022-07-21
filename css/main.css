@@ -286,6 +286,11 @@ body {
   padding-top: 103px;
   background-color: #ffffff;
 }
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  body {
+    padding-top: 167px;
+  }
+}
 body.menu-open {
   overflow: hidden;
 }
@@ -1201,11 +1206,27 @@ body.menu-open {
 
 .footer {
   padding-bottom: 63px;
+  padding-top: 63px;
 }
 
 .footer-content {
   display: flex;
-  justify-content: space-around;
+}
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  .footer-content {
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .footer-content {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-content {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
 
 .footer-leftblock__link {
@@ -1235,6 +1256,11 @@ body.menu-open {
   max-width: 264px;
   margin-bottom: 32px;
 }
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  .footer-leftblock__text {
+    max-width: 226px;
+  }
+}
 
 .footer-list {
   display: flex;
@@ -1263,6 +1289,16 @@ body.menu-open {
 }
 .footer-rightblock-list__item:not(:last-child) {
   margin-right: 165px;
+}
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  .footer-rightblock-list__item:not(:last-child) {
+    margin-right: 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-rightblock-list__item:not(:last-child) {
+    margin-right: 60px;
+  }
 }
 .footer-rightblock-list__text {
   font-weight: 400;

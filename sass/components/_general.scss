@@ -4,6 +4,10 @@ body {
 
   background-color: $main-bgc;
 
+  @include tablet {
+    padding-top: 167px;
+  }
+
   &.menu-open {
     overflow: hidden;
   }
