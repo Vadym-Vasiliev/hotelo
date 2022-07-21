@@ -11,6 +11,10 @@
 
   background-color: $main-bgc;
 
+  @include tablet {
+    padding-top: 20px;
+  }
+
   &__link {
     display: flex;
     align-items: flex-end;
@@ -23,6 +27,11 @@
 
     color: $black-text;
 
+    @include mobile {
+      font-size: 36px;
+      align-items: baseline;
+    }
+
     &:hover,
     &:focus {
       transform: scale(1.05);
@@ -32,6 +41,85 @@
   &__img {
     width: 32px;
     margin-right: 8px;
+
+    @include mobile {
+      width: 52px;
+    }
+  }
+}
+
+.menu-btn {
+  cursor: pointer;
+  border: none;
+
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    .menu-btn__svg {
+      fill: $accent;
+    }
+  }
+
+  &.is-open {
+    z-index: 1;
+  }
+  &__svg {
+    width: 80px;
+    height: 80px;
+    fill: $black-text;
+  }
+
+  &__svg-burger {
+    .menu-btn.is-open & {
+      display: none;
+    }
+  }
+
+  &__svg-cross {
+    display: none;
+
+    .menu-btn.is-open & {
+      display: block;
+    }
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.menu-box {
+  @include desktop {
+    display: flex;
+  }
+  @include mobile {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    border-left: 1px solid #ccc;
+    transform: translateX(100%);
+    transition: transform 250ms linear, opacity 250ms linear;
+
+    background-color: $yellow-bgc;
+  }
+
+  @include mobile {
+    &.is-open {
+      opacity: 1;
+      transform: translateX(0);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
   }
 }
 
@@ -39,13 +127,31 @@
   display: flex;
   align-content: center;
   justify-content: space-between;
+
+  @include tablet {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .header-list {
   display: flex;
-  align-items: center;
+
   margin-left: auto;
   margin-right: 60px;
+  @include tablet {
+    align-items: center;
+    justify-content: center;
+  }
+  @include desktop {
+    align-items: center;
+  }
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 
   &__item {
     &:not(:last-child) {
@@ -64,6 +170,9 @@
     transition: transform 250ms linear;
 
     color: $second-text;
+    @include mobile {
+      font-size: 32px;
+    }
 
     &:hover,
     &:focus {
@@ -97,6 +206,15 @@
   display: flex;
   align-items: center;
 
+  @include tablet {
+    justify-content: end;
+    gap: 10px;
+  }
+
+  @include mobile {
+    justify-content: center;
+  }
+
   &__menu {
     margin-right: 24px;
     border: none;
@@ -110,12 +228,23 @@
     &:hover,
     &:focus {
       transform: scale(1.1);
-      fill: $accent;
+
+      .header-rightblock__svg {
+        fill: $accent;
+      }
+    }
+
+    @include tablet {
+      margin-right: 0;
     }
   }
 
   &__svg {
     fill: $black-text;
+    @include mobile {
+      width: 38px;
+      height: 38px;
+    }
   }
 
   &__btn {
@@ -134,10 +263,18 @@
     color: $btn-text;
     background-color: transparent;
 
+    @include mobile {
+      font-size: 32px;
+    }
+
     &:hover,
     &:focus {
       transform: scale(1.05);
-      background-color: rgba(145, 143, 143, 0.1);
+      // background-color: rgba(145, 143, 143, 0.1);
+      @include mobile {
+        background-color: $accent;
+        color: $white-text;
+      }
     }
   }
 }
