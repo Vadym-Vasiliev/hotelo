@@ -1,18 +1,41 @@
 .subscribe {
   padding-bottom: 120px;
+
+  @include mobile {
+    padding-bottom: 60px;
+  }
 }
 
 .subscribe-content {
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
   border-radius: 16px;
   background-color: $second-bgc;
+  @include tablet {
+    justify-content: space-between;
+  }
+  @include desktop {
+    justify-content: space-between;
+  }
+
+  @include mobile {
+    justify-content: center;
+    padding: 20px;
+  }
 }
 
 .subscribe-leftblock {
   max-width: 701px;
   margin-left: 74px;
+
+  @include tablet {
+    margin-left: 20px;
+  }
+
+  @include mobile {
+    margin-left: 0;
+  }
 
   &__title {
     font-weight: 600;
@@ -21,6 +44,14 @@
     margin-bottom: 20px;
 
     color: $second-text;
+
+    @include tablet {
+      max-width: 350px;
+    }
+
+    @include mobile {
+      max-width: 400px;
+    }
   }
 
   &__text {
@@ -28,12 +59,23 @@
     font-size: 16px;
     line-height: 1.75;
     max-width: 536px;
+
+    @include tablet {
+      max-width: 350px;
+    }
+
+    @include mobile {
+      max-width: 400px;
+    }
   }
 }
 
 .subscribe-rightblock {
   &__img {
     width: 383px;
+    @include mobile {
+      display: none;
+    }
   }
 }
 
@@ -47,6 +89,16 @@
 
   background-color: $main-bgc;
 
+  @include tablet {
+    max-width: 350px;
+    margin-top: 50px;
+  }
+
+  @include mobile {
+    margin-top: 50px;
+    max-width: 400px;
+  }
+
   &__input {
     font-weight: 400;
     font-size: 14px;
@@ -54,6 +106,7 @@
     padding: 14px 26px;
     border: transparent;
     width: 400px;
+    border-radius: 25px;
 
     background-color: transparent;
   }

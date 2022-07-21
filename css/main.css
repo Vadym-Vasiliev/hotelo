@@ -291,6 +291,11 @@ body {
     padding-top: 167px;
   }
 }
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 167px;
+  }
+}
 body.menu-open {
   overflow: hidden;
 }
@@ -1139,18 +1144,48 @@ body.menu-open {
 .subscribe {
   padding-bottom: 120px;
 }
+@media screen and (max-width: 767px) {
+  .subscribe {
+    padding-bottom: 60px;
+  }
+}
 
 .subscribe-content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   border-radius: 16px;
   background-color: #eaeceb;
+}
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  .subscribe-content {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .subscribe-content {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subscribe-content {
+    justify-content: center;
+    padding: 20px;
+  }
 }
 
 .subscribe-leftblock {
   max-width: 701px;
   margin-left: 74px;
+}
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  .subscribe-leftblock {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subscribe-leftblock {
+    margin-left: 0;
+  }
 }
 .subscribe-leftblock__title {
   font-weight: 600;
@@ -1159,15 +1194,40 @@ body.menu-open {
   margin-bottom: 20px;
   color: #222222;
 }
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  .subscribe-leftblock__title {
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subscribe-leftblock__title {
+    max-width: 400px;
+  }
+}
 .subscribe-leftblock__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.75;
   max-width: 536px;
 }
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  .subscribe-leftblock__text {
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subscribe-leftblock__text {
+    max-width: 400px;
+  }
+}
 
 .subscribe-rightblock__img {
   width: 383px;
+}
+@media screen and (max-width: 767px) {
+  .subscribe-rightblock__img {
+    display: none;
+  }
 }
 
 .subscribe-form {
@@ -1178,6 +1238,18 @@ body.menu-open {
   border-radius: 50px;
   background-color: #ffffff;
 }
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  .subscribe-form {
+    max-width: 350px;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subscribe-form {
+    margin-top: 50px;
+    max-width: 400px;
+  }
+}
 .subscribe-form__input {
   font-weight: 400;
   font-size: 14px;
@@ -1185,6 +1257,7 @@ body.menu-open {
   padding: 14px 26px;
   border: transparent;
   width: 400px;
+  border-radius: 25px;
   background-color: transparent;
 }
 .subscribe-form__btn {
@@ -1206,7 +1279,6 @@ body.menu-open {
 
 .footer {
   padding-bottom: 63px;
-  padding-top: 63px;
 }
 
 .footer-content {

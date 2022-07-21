@@ -8,6 +8,10 @@ body {
     padding-top: 167px;
   }
 
+  @include mobile {
+    padding-top: 167px;
+  }
+
   &.menu-open {
     overflow: hidden;
   }
