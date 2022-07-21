@@ -1,5 +1,8 @@
 .hotels {
   padding-bottom: 120px;
+  @include mobile {
+    padding-bottom: 100px;
+  }
   &__title {
     font-weight: 600;
     font-size: 40px;
@@ -22,6 +25,15 @@
     align-items: flex-end;
     justify-content: space-between;
     margin-bottom: 40px;
+    @include tablet {
+      align-items: baseline;
+    }
+
+    @include mobile {
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: end;
+    }
   }
 }
 
@@ -29,9 +41,23 @@
   display: flex;
   align-items: center;
 
+  @include mobile {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
   &__item {
+    @include mobile {
+      margin: 15px;
+      width: calc((100% - 30px - 30px) / 3);
+    }
     &:not(:last-child) {
-      margin-right: 40px;
+      @include desktop {
+        margin-right: 40px;
+      }
+      @include tablet {
+        margin-right: 40px;
+      }
     }
   }
 
@@ -62,6 +88,14 @@
     transition: transform 250ms linear, border 250ms linear, background-color 250ms linear,
       color 250ms linear;
 
+    @include tablet {
+      text-align: center;
+    }
+
+    @include mobile {
+      text-align: center;
+    }
+
     &:hover,
     &:focus {
       transform: scale(1.05);
@@ -78,6 +112,16 @@
 .downblock-list {
   display: flex;
   justify-content: center;
+
+  @include tablet {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    gap: 30px;
+  }
 
   &__content {
     padding: 20px;
@@ -99,18 +143,32 @@
     transition: transform 250ms linear, box-shadow 250ms linear;
     display: block;
 
+    @include tablet {
+      margin: 15px;
+      width: calc((100% - 30px - 30px) / 2);
+    }
+
     &:hover,
     &:focus {
       transform: scale(1.02);
       box-shadow: 0px 22px 38px rgb(0 34 19 / 4%);
     }
     &:not(:last-child) {
-      margin-right: 24px;
+      @include desktop {
+        margin-right: 24px;
+      }
     }
   }
 
   &__img {
     width: 411px;
+    @include tablet {
+      width: 348px;
+    }
+
+    @include mobile {
+      width: 438px;
+    }
   }
   &__title {
     font-weight: 600;

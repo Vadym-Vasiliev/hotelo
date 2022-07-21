@@ -997,6 +997,11 @@ body.menu-open {
 .hotels {
   padding-bottom: 120px;
 }
+@media screen and (max-width: 767px) {
+  .hotels {
+    padding-bottom: 100px;
+  }
+}
 .hotels__title {
   font-weight: 600;
   font-size: 40px;
@@ -1017,13 +1022,44 @@ body.menu-open {
   justify-content: space-between;
   margin-bottom: 40px;
 }
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  .hotels__flex {
+    align-items: baseline;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hotels__flex {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: end;
+  }
+}
 
 .hotels-list {
   display: flex;
   align-items: center;
 }
-.hotels-list__item:not(:last-child) {
-  margin-right: 40px;
+@media screen and (max-width: 767px) {
+  .hotels-list {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hotels-list__item {
+    margin: 15px;
+    width: calc((100% - 30px - 30px) / 3);
+  }
+}
+@media screen and (min-width: 1320px) {
+  .hotels-list__item:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  .hotels-list__item:not(:last-child) {
+    margin-right: 40px;
+  }
 }
 .hotels-list__input {
   position: absolute;
@@ -1050,6 +1086,16 @@ body.menu-open {
   transform: scale(1);
   transition: transform 250ms linear, border 250ms linear, background-color 250ms linear, color 250ms linear;
 }
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  .hotels-list__span {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hotels-list__span {
+    text-align: center;
+  }
+}
 .hotels-list__span:hover, .hotels-list__span:focus {
   transform: scale(1.05);
   border: 1px solid #505050;
@@ -1062,6 +1108,18 @@ body.menu-open {
 .downblock-list {
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  .downblock-list {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .downblock-list {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 .downblock-list__content {
   padding: 20px;
@@ -1081,15 +1139,33 @@ body.menu-open {
   transition: transform 250ms linear, box-shadow 250ms linear;
   display: block;
 }
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  .downblock-list__item {
+    margin: 15px;
+    width: calc((100% - 30px - 30px) / 2);
+  }
+}
 .downblock-list__item:hover, .downblock-list__item:focus {
   transform: scale(1.02);
   box-shadow: 0px 22px 38px rgba(0, 34, 19, 0.04);
 }
-.downblock-list__item:not(:last-child) {
-  margin-right: 24px;
+@media screen and (min-width: 1320px) {
+  .downblock-list__item:not(:last-child) {
+    margin-right: 24px;
+  }
 }
 .downblock-list__img {
   width: 411px;
+}
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  .downblock-list__img {
+    width: 348px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .downblock-list__img {
+    width: 438px;
+  }
 }
 .downblock-list__title {
   font-weight: 600;
