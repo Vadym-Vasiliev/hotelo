@@ -748,11 +748,27 @@ body.menu-open {
 .service {
   padding-bottom: 120px;
 }
+@media screen and (max-width: 767px) {
+  .service {
+    padding-bottom: 80px;
+  }
+}
 
 .service-flex {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  .service-flex {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .service-flex {
+    margin-bottom: 60px;
+    flex-direction: column;
+  }
 }
 
 .service-leftblock {
@@ -777,8 +793,19 @@ body.menu-open {
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  .service-list {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .service-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .service-list__item {
-  max-width: 308px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
   border-radius: 8px;
   padding: 21px 21px 50px 21px;
@@ -788,8 +815,32 @@ body.menu-open {
   flex-direction: column;
   align-items: center;
 }
-.service-list__item:not(:last-child) {
-  margin-right: 22px;
+@media screen and (max-width: 767px) {
+  .service-list__item:not(:last-child) {
+    margin-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .service-list__item:not(:last-child) {
+    margin-right: 22px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .service-list__item {
+    max-width: 308px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1319px) {
+  .service-list__item {
+    width: calc((100% - 30px - 30px) / 2);
+    margin: 15px;
+    max-width: 308px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .service-list__item {
+    width: 400px;
+  }
 }
 .service-list__item:hover, .service-list__item:focus {
   transform: scale(1.01);
@@ -815,6 +866,11 @@ body.menu-open {
   text-align: center;
   width: 278px;
   color: #666666;
+}
+@media screen and (max-width: 767px) {
+  .service-list__text {
+    max-width: 300px;
+  }
 }
 
 .finest {
